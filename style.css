@@ -1,0 +1,71 @@
+
+/* Couleur d'arrière-plan rouge pour une largeur inférieure à 480px */
+@media  (max-width: 479px) { 
+    body {
+        background-color: red;
+        font-size: small;
+    }
+    .small, .medium, .large {
+       
+        display: block;
+        flex-direction: row; /* Alignement horizontal */
+        justify-content: center; /* Centrage des textes horizontalement */
+        align-items: center; /* Centrage des textes verticalement */
+        width: 100%; /* Prend la pleine largeur */
+        border: 2px solid black;
+    }
+} 
+
+/* Couleur d'arrière-plan verte pour une largeur supérieure ou égale à 480px et inférieure à 1024px */ 
+@media  (min-width: 480px) and (max-width: 1023px) {
+    body {
+         background-color: green;
+         font-size: medium;
+    }
+    .medium {
+         display: block;
+        border: 2px solid black;
+        width: 33.3%; /* 1/3 de largeur */
+    }
+    .small, .large{
+        display: block;
+        flex-direction: row; /* Alignement horizontal */
+        justify-content: center; /* Centrage des textes horizontalement */
+        align-items: center; /* Centrage des textes verticalement */
+        width: 100%; /* Prend la pleine largeur */
+        border: 2px solid black;
+    }
+    .small {
+        width: 66.6%; /* 2/3 de largeur */
+    }
+ 
+
+}
+
+/* Couleur d'arrière-plan bleue pour une largeur supérieure ou égale à 1024px  */
+
+@media (min-width: 1024px) {
+    body {
+        background-color: blue;
+        border: 2px solid black;
+        font-size: large;
+        display: flex;        
+    }
+    .large {
+        display: contents;
+        
+    }
+    
+    .small, .medium, .large {
+        display: block;
+        
+        justify-content: center; /* Centrage des textes horizontalement */
+        align-items: center; /* Centrage des textes verticalement */
+        width: 33.3%; /* Chaque div prend 1/3 de largeur */
+        vertical-align: top; /* Alignement en haut */
+        border: 2px solid black;
+        text-align: center;
+
+    }
+}
+
